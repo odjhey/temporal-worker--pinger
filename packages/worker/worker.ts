@@ -13,7 +13,7 @@ async function run() {
     connection,
     workflowsPath: require.resolve("../workflows/dist/all-workflows.js"),
     activities,
-    taskQueue: "pingtq",
+    taskQueue: process.env.TASKQUEUE_NAME || "pingtq",
   });
   // Worker connects to localhost by default and uses console.error for logging.
   // Customize the Worker by passing more options to create():

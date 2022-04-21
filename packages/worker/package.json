@@ -1,0 +1,22 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Odee",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon worker.ts --watch ./worker.ts --watch ../temporal-workflows",
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "temporalio": "^0.21.1",
+    "workflows": "*"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

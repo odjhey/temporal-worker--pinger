@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "start.worker": "yarn workspace worker start",
+    "build.workflows": "yarn workspace workflows build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "packageManager": "yarn@3.2.0"
+}
